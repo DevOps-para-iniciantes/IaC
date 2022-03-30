@@ -7,6 +7,6 @@ de infraestrutura com a utilização de **Terraform** e o **Google Cloud Platfor
 2) Google Cloud Storage
 3) Google Compute Engine
 4) Utilização de Clusters
-5) utilização de Módulos
+5) Utilização de Módulos
 
-O repositório oferece o código utilizado e o tutorial está disponível em https://devops-para-iniciantes.github.io/IaC/.
+O repositório oferece o código utilizado e o tutorial está disponível [aqui](https://devops-para-iniciantes.github.io/IaC/).

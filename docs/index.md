@@ -1,4 +1,15 @@
-## Welcome to GitHub Pages
+# Tutorial de Infraestrutura como Código
+
+O tutorial comtepla as seguintes partes:
+
+- [Conceitos Iniciais](conceitos.md)
+- [Parte 1 - Entendendo o Terraform com Local Files](parte1.md)
+- [Parte 2 - Google Cloud Storage](parte2.md)
+- [Parte 3 - Google Compute Engine](parte3.md)
+- [Parte 4 - Utilização de Clusters](parte4.md)
+- [Parte 4 - Utilização de Módulos](parte5.md)
+
+<!-- ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/DevOps-para-iniciantes/IaC/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -34,4 +45,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out. -->
