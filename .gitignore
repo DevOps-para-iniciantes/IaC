@@ -1,4 +1,5 @@
 *.lock.hcl
 *.tfstate
 *.tfstate.backup
-parte_1/.terraform
+parte1/.terraform
+arquivos/
