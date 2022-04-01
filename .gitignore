@@ -2,4 +2,6 @@
 *.tfstate
 *.tfstate.backup
 parte1/.terraform
+parte2/.terraform
+parte2/service_account.json
 arquivos/
