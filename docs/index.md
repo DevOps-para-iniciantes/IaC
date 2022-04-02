@@ -2,12 +2,12 @@
 
 O tutorial comtepla as seguintes partes:
 
-- [Conceitos Iniciais](conceitos.md)
-- [Parte 1 - Entendendo o Terraform com Local Files](parte1.md)
-- [Parte 2 - Google Cloud Storage](parte2.md)
-- [Parte 3 - Google Compute Engine](parte3.md)
-- [Parte 4 - Utilização de Clusters](parte4.md)
-- [Parte 4 - Utilização de Módulos](parte5.md)
+- [Conceitos Iniciais](conceitos/main.md)
+- [Parte 1 - Entendendo o Terraform com Local Files](parte1/main.md)
+- [Parte 2 - Google Cloud Storage](parte2/main.md)
+- [Parte 3 - Google Compute Engine](parte3/main.md)
+- [Parte 4 - Utilização de Clusters](parte4/main.md)
+- [Parte 4 - Utilização de Módulos](parte5/main.md)
 
 <!-- ## Welcome to GitHub Pages
 
