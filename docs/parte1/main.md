@@ -35,11 +35,49 @@ Além disso, será criado o primeiro arquivo ```terraform.tfstate```, que irá a
 
 Assim, o resultado final após a execução desse código será a criação de um arquivo chamado ```tutorial.txt``` dentro da pasta ```arquivos```, que também será criada, e com o conteúdo sendo a frase ```tutorial legal!```.
 
-## Realizando um Print de Conteúdo
+## Alterando o Código e Mudando o State
 
 Após a execução de um código inicial, obtém-se uma mudança na infraestrutura, que nesse caso é a criação de um novo arquivo ```tutorial.txt``` na pasta ```arquivos```, ocorrido localmente.
 Com isso, foi gerado o arquivo de estado atual da infraestrutura, que é
 o ```terraform.tfstate```. Agora, adicionamos o seguinte código no arquivo de configuração já existente:
+![Terraform plan](images/terraform_primeira_mudanca.png)
+
+No código acima temos a adição de um recurso ```variable```, de nome ```conteudo_tutorial```. Esse recurso nos permite atribuir variáveis ao código para utilização em diferentes locais que hajam a necessidade de informações facilmente recuperáveis.
+
+As definições do tipo _variable_ possuem a seguinte estrutura:
+
+```
+    data "nome" {
+        parametro_1 = valor
+        parametro_2 = valor
+        ...
+    }
+```
+
+Para esse bloco, utilizando ```variable```, temos:
+
+1. O parâmetro ```type```, cujo o valor será o tipo da variável desejado.
+2. O parâmetro ```default```, onde o valor será o conteúdo a ser armazenado na variável.
+
+Com o novo incremento ao código devidamente realizado, os passos são:
+
+1. Rodar o comando ```terraform plan```, cujo resultado mostrado na linha de comando será semelhante à:
+![Terraform plan](images/terraform_novo_plan.png)
+
+2. Em seguida, deve-se executar o comando ```terraform apply``` para efetivação das mudanças.
+
+Com as mudanças aplicadas à infraestrutura, teremos:
+
+1. A atualização do arquivo ```terraform.tfstate``` para algo semelhante à:
+![Terraform plan](images/novo_state.png)
+2. A criação de um arquivo de _backup_ do _state_ anterior chamado ```terraform.tfstate.backup```, que terá conteúdo semelhante à:
+![Terraform plan](images/state_backup.png)
+
+Assim, o resultado final após a execução desse código será a mudança do arquivo ```tutorial.txt``` com o novo conteúdo passando a ser a frase ```Aproveite o tutorial!```.
+
+## Realizando um Print de Conteúdo
+
+Uma utilização interessante de recursos do Terraform é a visualização de informações na linha de comando utilizando um tipo de ```print```. Para isso, adicionamos o seguinte código no arquivo de configuração:
 ![Terraform plan](images/terraform_segunda_mudanca.png)
 
 No código acima temos a utilização de dois outros recursos presentes no Terraform, que são ```data```, do tipo ```local_file``` e nome ```arquivo_recuperado```, e um ```output```, de nome ```arquivo_recuperado_output```.
