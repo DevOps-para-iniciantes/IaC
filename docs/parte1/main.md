@@ -120,3 +120,5 @@ Com o novo incremento ao código devidamente realizado, os passos são:
 ![Terraform plan](images/terraform_apply_output.png)
 
 Assim, o resultado final após a execução desse código será a leitura do conteúdo do arquivo ```tutorial.txt``` e a exibição do seu ```id``` e conteúdo na linha de comando.
+
+A próxima etapa do tutorial introduz a utilização do Terraform definindo um _provider_ não local e pode ser acessada [aqui](../parte2/main.md).
