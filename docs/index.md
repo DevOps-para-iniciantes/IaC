@@ -1,6 +1,6 @@
 # Tutorial de Infraestrutura como Código
 
-O tutorial comtepla as seguintes partes:
+O tutorial contempla as seguintes partes:
 
 - [Conceitos Iniciais](conceitos/main.md)
 - [Parte 1 - Entendendo o Terraform com Local Files](parte1/main.md)
