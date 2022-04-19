@@ -69,7 +69,7 @@ Nesse código temos:
 2. A definição da _variable_ ```bucket_location``` sem especificação de nenhum parâmetro.
 3. A definição da _variable_ ```state_folder``` sem especificação de nenhum parâmetro.
 
-Para especificar os valores que serão atribuídos às variáveis, no arquivo ```terraform.tfvars```, adicionaremos o seguinte código:
+Para especificar os valores que serão atribuídos às variáveis, no arquivo **_terraform.tfvars_**, adicionaremos o seguinte código:
 
 ![Atribuição dos valores das variáveis do resource bucket](images/valores_variaveis_bucket.png)
 
