@@ -31,4 +31,4 @@ Com o projeto executado espera-se que:
 2) Seja criado o _bucket_ **tutorial_iac** dentro do projeto **tcc-iac**
 3) Seja criado os arquivos **terraform.tfstate** e **terraform.tfstate.backup** dentro da pasta **state** do _bucket_ **tutorial_iac**
 
-Para maior compreensão do código e conceitos utilizados pode ser acessado o tutorial que este projeto faz parte [aqui](../docs/parte2/main.md).
+Para maior compreensão do código e conceitos utilizados pode ser acessado o tutorial que este projeto faz parte [aqui](https://devops-para-iniciantes.github.io/IaC/parte2/main.html).

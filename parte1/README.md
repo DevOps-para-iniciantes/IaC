@@ -27,4 +27,4 @@ Com o projeto executado espera-se que:
 1) Seja criado um arquivo chamado **tutorial.txt** dentro da pasta **parte1**
 2) Seja realizado um print com o conteúdo do arquivo e seu **id** no Terraform
 
-Para maior compreensão do código e conceitos utilizados pode ser acessado o tutorial que este projeto faz parte [aqui](../docs/parte1/main.md).
+Para maior compreensão do código e conceitos utilizados pode ser acessado o tutorial que este projeto faz parte [aqui](https://devops-para-iniciantes.github.io/IaC/parte1/main.html).
