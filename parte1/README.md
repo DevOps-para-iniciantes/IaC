@@ -2,7 +2,9 @@
 
 ## Pré-requisitos para Execução
 
-Para utilizar o projeto é necessário ter instalado previamente o Terraform na máquina. O passo a passo de como realizar
+Para utilizar o projeto é necessário:
+
+1) Ter instalado previamente o Terraform na máquina. O passo a passo de como realizar
 a instalação pode ser encontrado [aqui](https://learn.hashicorp.com/tutorials/terraform/install-cli).
 
 ## Como Executar
@@ -24,3 +26,5 @@ Com o projeto executado espera-se que:
 
 1) Seja criado um arquivo chamado **tutorial.txt** dentro da pasta **parte1**
 2) Seja realizado um print com o conteúdo do arquivo e seu **id** no Terraform
+
+Para maior compreensão do código e conceitos utilizados pode ser acessado o tutorial que este projeto faz parte [aqui](../docs/parte1/main.md).
