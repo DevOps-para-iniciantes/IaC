@@ -7,7 +7,7 @@ O tutorial contempla as seguintes partes:
 - [Parte 2 - Google Cloud Storage](parte2/main.md)
 - [Parte 3 - Google Compute Engine](parte3/main.md)
 - [Parte 4 - Utilização de Clusters](parte4/main.md)
-- [Parte 4 - Utilização de Módulos](parte5/main.md)
+- [Parte 5 - Utilização de Módulos](parte5/main.md)
 
 <!-- ## Welcome to GitHub Pages
 
