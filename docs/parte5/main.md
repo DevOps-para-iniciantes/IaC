@@ -43,4 +43,4 @@ No código acima temos:
 6. A utilização do parâmetro ```cluster_name``` de valor ```tcc-cluster```.
 7. A utilização do parâmetro ```machine_type``` de valor ```e2-small```.
 
-É possível notar que os parâmetros utilizados numa estrutura _module_ são referentes às variáveis existentes no projeto passado em **_source_**, com exceção ao próprio parâmetro **_source_**. Com isso, podem ser executados os comandos ```plan``` e ```apply```. O resultado final obtido será a o mesmo dos projetos utilizados nas partes 3 e 4, sem nenhuma alteração.
+É possível notar que os parâmetros utilizados numa estrutura _module_ são referentes às variáveis existentes no projeto passado em **_source_**, com exceção ao próprio parâmetro **_source_**. Com isso, podem ser executados os comandos ```plan``` e ```apply```. O resultado final obtido será o mesmo dos projetos utilizados nas partes 3 e 4, sem nenhuma alteração.
