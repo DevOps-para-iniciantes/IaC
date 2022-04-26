@@ -31,3 +31,10 @@ As **sources** são divididas em duas fontes de entradas de informação para re
 Ao realizar a comparação entre **TF-config** e o **State** o Terraform define o que deve ser criado, atualizado ou destruído para que a infraestrutura passe do estado atual para o estado desejado.
 
 Com um provider definido é possível acessar diferentes **resources** presentes nele. Cada provider possui seus próprios *resources* que podem ser utilizados na configuração da infraestrutura por meio do Terraform.
+
+## Pré requisitos
+Para executar o tutorial será necessário ter alguns pré requisitos instalados no seu computador e criado algumas contas:
+- [Ter criado uma conta no gcloud](https://cloud.google.com/free?utm_source=google&utm_medium=cpc&utm_campaign=latam-BR-all-pt-dr-AKWS-all-all-trial-p-dr-1011454-LUAC0013595&utm_content=text-ad-none-any-DEV_c-CRE_512285710752-ADGP_Hybrid%20%7C%20BKWS%20-%20PHR%20%7C%20Txt%20~%20GCP_General-KWID_43700062788251482-kwd-464643078222&utm_term=KW_gcloud-ST_Gcloud&gclid=CjwKCAjwjZmTBhB4EiwAynRmD9TyiA9rpe6IX8DG9XnpKxpnLyBLMRtviYB4CTH_SRB63iJX-GaGPRoCetIQAvD_BwE&gclsrc=aw.ds)
+- [Ter criado uma service account no gcloud](https://cloud.google.com/iam/docs/creating-managing-service-accounts#iam-service-accounts-create-gcloud)
+- [Ter instalado o gcloud cli](https://cloud.google.com/sdk/docs/install)
+- [Ter instalado o terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)

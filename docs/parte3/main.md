@@ -9,19 +9,17 @@
 ![Provider](images/provider-compute-engine.png)
 
 - Analisando a imagem acima vemos que temos a definição do provider como foi explicado anteriormente e a nossa definição de backend.
+
 ```
 terraform {
-  ## Definição do tipo de backend que vamos utilizar, pois existem vários tipos como S3,kubernets entre outros
   backend "gcs" {
-    ## Nome do bucket que criamos na parte 2, pois o bucket já tem que ter sido criado
     bucket  = "tutorial_iac"
-    ## Prefixo do arquivo que vai ser salvo no bucket com nosso projeto
     prefix  = "terraform/state"
-    ## As credenciais para acessar nossa conta do google cloud
     credentials = "./service_account.json"
   }
 
 ```
+
 - Agora que entendomos como funciona o nosso backend e como ele é importante para a gestão do arquivo  _terraform.tf.state_ vamos entrar na parte de criação do nosso resource.
 
 ### Compute engine
@@ -40,22 +38,17 @@ IMAGEM DAS VARS
 
 ![resources compute engine](images/resources-compute-engine.png)
 
+
 ```
 resource "google_compute_instance" "my-first-vm" {
-  ## Nome da VM
   name         = var.vm_name
-  ## Tipo de máquina utilizada
   machine_type = var.machine_type
-  ## Zona de disponibilidade1
   zone         = var.zone
-  ## Qual imagem será utilizada como base para a VM
   boot_disk {
     initialize_params {
       image = var.image_so
     }
   }
-
-  ## É possível configurar uma interface de redes assim como regras de firewall, mas deixamos o default
   network_interface {
     network = "default"
 
@@ -63,17 +56,19 @@ resource "google_compute_instance" "my-first-vm" {
       // Ephemeral public IP
     }
   }
-  ## É um script que é executado ao criar a máquina
   metadata_startup_script = "echo 'criando vm' > /test.txt"
 
 }
 ```
+
 Agora que entendemos todos os aquivos que compõe a criação do no _resource_ vamos executar os comandos abaixo:
+
 ```
 terraform init
 terraform plan
 terraform apply
 ```
+
 E teremos o seguinte retorno:
 
 ![resultado compute engine](images/resultado.png)
