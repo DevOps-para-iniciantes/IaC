@@ -16,8 +16,9 @@ Para executar o projeto na linha de comando é necessário:
 3) Executar os seguintes comandos:
 
 ```
-Terraform plan
-Terraform apply
+terraform init
+terraform plan
+terraform apply
 ```
 
 ## Resultado Esperado
