@@ -103,6 +103,14 @@ Para o segundo _resource_ temos:
 4. A utilização do parâmetro ```bucket```, com o valor ```var.bucket_name```.
 5. A utilização do parâmetro ```depends_on``` para indicar que a aplicação deste _resource_ depende da aplicação prévia do _resource_ ```google_storage_bucket.tutorial_bucket```.
 
-Nesse caso, a única variável nova utilizada é ```state_folder``` que já foi definida anteriormente. Com isso, podem ser executados os comandos ```plan``` e ```apply```. Por fim, o resultado final após a execução desse código será a cópia dos arquivos locais **_terraform.tfstate_** e **_terraform.tfstate.backup_** para dentro da pasta **_state_** do _bucket_ ```tutorial_iac```.
+Nesse caso, a única variável nova utilizada é ```state_folder``` que já foi definida anteriormente. Com isso, podem ser executados os comandos:
+
+```
+terraform init
+terraform plan
+terraform apply
+```
+
+Por fim, o resultado final após a execução desse código será a cópia dos arquivos locais **_terraform.tfstate_** e **_terraform.tfstate.backup_** para dentro da pasta **_state_** do _bucket_ ```tutorial_iac```.
 
 A próxima etapa do tutorial introduz a utilização da Compute Engine do Google para configuração de máquinas virtuais com determinadas configurações e pode ser acessada [aqui](../parte3/main.md).
