@@ -9,7 +9,7 @@ module "vm" {
 
 module "k8s"{
     source = "../parte4"
-    zona = "us-central1"
+    zone = "us-central1"
     project = "tcc-iac"
     node_count  = 1
     cluster_name = "tcc-cluster"
