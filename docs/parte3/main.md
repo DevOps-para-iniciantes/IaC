@@ -60,7 +60,8 @@ resource "google_compute_instance" "my-first-vm" {
 
 }
 ```
-
+Agora, antes de executarmos os comandos de execução do terraform, é necessário fazer algo diferente dos *resources* anteriores. Para criar uma máquina virtual no ***Compute Engine*** é necessário acessar a API no **Google Cloud** e ativar, para que o terraform possa se comunicar com a API do **Compute Engine** e seja criada. Para ativar a API, basta ir na aba de pesquisa e procurar por **Compute engine** e ativá-la, como mostra as imagens abaixo:
+![compete engine](images/compute-engine.png)
 Agora que entendemos todos os códigos que compõem a criação do no _resource_ vamos executar os comandos já conhecidos, que são:
 
 ```
