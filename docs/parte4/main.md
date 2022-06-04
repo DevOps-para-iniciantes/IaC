@@ -1,7 +1,8 @@
 # Utilização de Clusters
 
 Nesse tópico será exemplificado como podemos criar um __*cluster*__ de [Kubernetes](https://kubernetes.io/pt-br/docs/concepts/overview/what-is-kubernetes/) utilizando o terraform de forma simples e rápida. Para aqueles que não sabem, o kubernetes é uma ferramenta de orquestração de *containers*. A criação de um *cluster* tem a finalidade principal de explicar o *resource* que utiliza algumas *compute engines*, tema da [parte 3](../parte3/main.md).
-
+É importante dizer que cada tutorial será feito em uma pasta diferente, então crie uma pasta para a parte que será explicada nessa página.
+Caso tenha alguma dúvida pode consultar o código fonte que está nesse [link](https://github.com/DevOps-para-iniciantes/IaC/tree/master/parte4)
 ## Provider utilizado
 
 Os *provider* que utilizaremos são os mesmos da parte anterior e, por esse motivo, não será explicado nessa parte detalhes de sua implementação.

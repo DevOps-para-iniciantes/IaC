@@ -1,6 +1,8 @@
 # Parte 2 - Google Cloud Storage
 
 Agora, com um entendimento prévio de como funcionam os _resources_ no Terraform utilizando o _provider_ local, podemos verificar a utilização dos _resources_ por meio de um _provider_ externo, nesse caso, o [Google Cloud Platform](https://cloud.google.com/). Para isso, assume-se que o usuário possui uma [conta de serviço](https://cloud.google.com/iam/docs/service-accounts?hl=pt-br), que pode ser criada seguindo a documentação da plataforma.
+É importante dizer que cada tutorial será feito em uma pasta diferente, então crie uma pasta para a parte que será explicada nessa página.
+Caso tenha alguma dúvida pode consultar o código fonte que está nesse [link](https://github.com/DevOps-para-iniciantes/IaC/tree/master/parte2)
 
 ## Definindo o Provider Google Cloud
 
@@ -20,7 +22,8 @@ No código acima temos:
     }
 ```
 
-2. A utilização do parâmetro ```project```, referente ao nome do projeto que será utilizado no Google Cloud, com o valor ```var.project```.
+2. A utilização do parâmetro ```project``` é referente ao id do projeto que foi criado no Google Cloud, para encontar esse valor basta olhar no arquivo que baixamos e renomeamos como `service_account.json`, como mostra no exemplo de imagem abaixo, o valor que vamos setar no `var.project` é o mesmo do `project_id`.
+![project id ](images/project-id.png)
 3. A utilização do parâmetro ```credentials```, referente ao arquivo **_.json_** contendo as credenciais da conta de serviço do usuário. Nesse caso, o valor da variável é especificado como ```file(./service_account.json)```. A utilização do método ```file()``` é para garantir que o valor desejado seja buscado de um **arquivo** localizado no caminho passado.
 4. A utilização do parâmetro ```zone```, referente à zona onde deverá estar armazenado o projeto utilizado, com o valor ```var.zone```.
 
@@ -110,7 +113,11 @@ terraform init
 terraform plan
 terraform apply
 ```
+**OBS**: Se receber algum erro parecido com o da imagem abaixo não entre em pânico.
+![Adição do resource google_storage_bucket](images/erro-bucket.jpeg)
+Tudo que deve fazer é mudar o nome do ```var.bucket_name``` no arquivo `tf.vars` para algo que seja único, eu sugiro `bucket_name = "tutorial_iac_SEU_NOME"`, isso fará o erro desaparecer, só rodar o `terraform apply` novamente.
 
 Por fim, o resultado final após a execução desse código será a cópia dos arquivos locais **_terraform.tfstate_** e **_terraform.tfstate.backup_** para dentro da pasta **_state_** do _bucket_ ```tutorial_iac```.
 
+Iremos utilizar o bucket criado no próximo tutorial, então não delete o cloud storage que foi criado.
 A próxima etapa do tutorial introduz a utilização da Compute Engine do Google para configuração de máquinas virtuais com determinadas configurações e pode ser acessada [aqui](../parte3/main.md).

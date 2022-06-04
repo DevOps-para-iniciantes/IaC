@@ -1,7 +1,8 @@
 # Google Compute Engine
 Após o primeiro acesso ao **Google Cloud**, nesse tópico, iremos criar um _compute engine_ no _google cloud_. Como foi explicado no tópico 2 sobre como utilizar o _provider_ esse tópico será focado na contrução do _resource_ de _compute_ _engine_.
 A  _compute_ _engine_ do google é equivalente a uma máquina virtual. Essas máquinas virtuais são normalmente usadas como servidores de aplicações onde é possível hospedar uma aplicação e acessar através da _internet_.
-
+É importante dizer que cada tutorial será feito em uma pasta diferente, então crie uma pasta para a parte que será explicada nessa página.
+Caso tenha alguma dúvida pode consultar o código fonte que está nesse [link](https://github.com/DevOps-para-iniciantes/IaC/tree/master/parte3)
 ## Provider com Backend
 
 Para criar a _compute_ _engine_ precisaremos utilizar novamente o _provider_ ```google```, mas nesse momento iremos introduzir um conceito importante que é o de **_backend_**.
@@ -18,8 +19,10 @@ terraform {
     prefix  = "terraform/state"
     credentials = "./service_account.json"
   }
+}
 
 ```
+OBS: Utilize o mesmo nome do bucket que usou anteriormente na parte 2.
 
 Agora que entendemos como funciona o nosso _backend_ e como ele é importante para a gestão do arquivo  ```_terraform.tf.state_``` vamos entrar na parte de criação do nosso _resource_.
 
@@ -31,9 +34,9 @@ Para criarmos nosso **_resource_**, vamos primeiramente entender as variáveis, 
 |---|---|
 |```zone```   |   É a zona de disponibilidade onde iremos alocar nossa máquina virtual|
 | ```project```  | É o nome do nosso projeto no google cloud plataform   |
-| ```vm_name```  | É o nome que daremos a nossa máquina virtual  |
-|```machine_type```| É o tipo de máquina que vamos escolher, é possível criar máquinas com recursos diferentes(vcpu e memória), nesse caso usaremos uma máquina média|
-|```image_so```| É a imagem do Sistema operacional, nesse caso usaremos o debian-9|
+| ```vm_name```  | É o nome que daremos a nossa máquina virtual(pode dar qualquer nome que quiera) |
+|```machine_type```| É o tipo de máquina que vamos escolher, é possível criar máquinas com recursos diferentes(vcpu e memória), nesse caso usaremos uma máquina média("e2-medium")|
+|```image_so```| É a imagem do Sistema operacional, nesse caso usaremos o debian-9("debian-cloud/debian-9")|
 
 Agora que todas as variáveis estão mapeadas podemos criar o arquivo **_compute_engine.tf_** e adicionar o seguinte código que define a nossa **_compute_ _engine_**:
 

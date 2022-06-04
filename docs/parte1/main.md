@@ -1,6 +1,8 @@
 # Parte 1 - Entendendo o Terraform com Local Files
 
 O Terraform utiliza **_providers_** e seus **_resources_** como recursos principais e, para um entendimento inicial de como funciona a ferramenta, pode-se utilizar o _resource_ **_local_file_**, para a criar ou editar arquivos. Esse _resource_ faz parte do _provider_ local, ou seja, a própria máquina do usuário onde está sendo executada a ferramenta. Dessa forma, ao utilizar esse tipo de _resource_, todas as modificações serão realizadas na própria máquina do usuário.
+É importante dizer que cada tutorial será feito em uma pasta diferente, então crie uma pasta para a parte que será explicada nessa página.
+Caso tenha alguma dúvida pode consultar o código fonte que está nesse [link](https://github.com/DevOps-para-iniciantes/IaC/tree/master/parte1)
 
 ## Primeiro Código e Como Executá-lo
 
@@ -60,11 +62,11 @@ Para esse bloco, utilizando ```variable```, temos:
 2. O parâmetro ```default```, onde o valor será o conteúdo a ser armazenado na variável.
 
 Com o novo incremento ao código devidamente realizado, os passos são:
-
-1. Rodar o comando ```terraform plan```, cujo resultado mostrado na linha de comando será semelhante à:
+1. Rodar o comando `terraform init` para inicializer o terraform com as configurações necessárias definidas no seu provider, basicamente o terraform faz o download do binário do provider e o usa, ele fica dentro da pasta `.terraform/providers`.
+2. Após rode o comando ```terraform plan```, cujo resultado mostrado na linha de comando será semelhante à:
 ![Terraform plan](images/terraform_novo_plan.png)
 
-2. Em seguida, deve-se executar o comando ```terraform apply``` para efetivação das mudanças.
+3. Em seguida, deve-se executar o comando ```terraform apply``` para efetivação das mudanças.
 
 Com as mudanças aplicadas à infraestrutura, teremos:
 
@@ -95,7 +97,7 @@ As definições do tipo _data_ possuem a seguinte estrutura:
 Já as definições do tipo _output_ ficam:
 
 ```
-    data "nome" {
+    output "nome" {
         parametro_1 = valor
         parametro_2 = valor
         ...

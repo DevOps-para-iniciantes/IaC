@@ -1,5 +1,6 @@
 # Utilização de Módulos
-
+É importante dizer que cada tutorial será feito em uma pasta diferente, então crie uma pasta para a parte que será explicada nessa página.
+Caso tenha alguma dúvida pode consultar o código fonte que está nesse [link](https://github.com/DevOps-para-iniciantes/IaC/tree/master/parte5)
 ## Definindo os Módulos
 
 Para se iniciar, como vimos anteriormente, criaremos o arquivo de configuração do _provider_ com nome  **_provider.tf_**. Dentro do arquivo criado colocaremos o seguinte código:

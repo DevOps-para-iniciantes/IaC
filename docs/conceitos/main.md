@@ -25,6 +25,8 @@ A arquitetura do Terraform é dividida nos seguintes componentes:
 
 As **sources** são divididas em duas fontes de entradas de informação para realização das tarefas de configuração necessárias, que são:
 
+Um **provider** nada mais é do que o provedor de serviços cloud em que você irá utilizar em suas aplicações, nesse caso, estamos utilizando o Google Cloud, mas existem outros vários providers suportados como AWS, Azure.
+
 - **TF-config** - arquivo **.tf** que define o que **criar/configurar** para que a infraestrutura atual passe para o estado desejado.
 - **State** - arquivo **.tfstate** que mantém o estado atual da configuração.
 
@@ -36,5 +38,10 @@ Com um provider definido é possível acessar diferentes **resources** presentes
 Para executar o tutorial será necessário ter alguns pré requisitos instalados no seu computador e criado algumas contas:
 - [Ter criado uma conta no gcloud](https://cloud.google.com/free?utm_source=google&utm_medium=cpc&utm_campaign=latam-BR-all-pt-dr-AKWS-all-all-trial-p-dr-1011454-LUAC0013595&utm_content=text-ad-none-any-DEV_c-CRE_512285710752-ADGP_Hybrid%20%7C%20BKWS%20-%20PHR%20%7C%20Txt%20~%20GCP_General-KWID_43700062788251482-kwd-464643078222&utm_term=KW_gcloud-ST_Gcloud&gclid=CjwKCAjwjZmTBhB4EiwAynRmD9TyiA9rpe6IX8DG9XnpKxpnLyBLMRtviYB4CTH_SRB63iJX-GaGPRoCetIQAvD_BwE&gclsrc=aw.ds)
 - [Ter criado uma service account no gcloud](https://cloud.google.com/iam/docs/creating-managing-service-accounts#iam-service-accounts-create-gcloud)
+
+obs: Quando estiver criando a conta de serviço dê permissão de proprietário para a service account. Após a criação entre na service account que você criou e vá em `chaves`, clique em adicionar nova chave, escolga o formato json e baixe, somente utilizaremos esssa chave na etapa 2, mas é bom já baixar e renomear para `/service_account.json`
+
 - [Ter instalado o gcloud cli](https://cloud.google.com/sdk/docs/install)
 - [Ter instalado o terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+
+A próxima etapa do tutorial introduz a utilização do Terraform definindo com um provider local, pode ser acessada [aqui](../parte2/main.md).
