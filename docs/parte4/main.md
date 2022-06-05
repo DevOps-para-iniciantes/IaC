@@ -23,13 +23,13 @@ Após definir essas variáveis no arquivo `terraform.tfvars` teremos o arquivo `
 
 Nesse exemplo, utilizaremos 2 *resources* diferentes para compor o kubernetes. O motivo é para que sejam mostrados alguns detalhes sobre como utilizar resultados da criação de um recurso com outros, criando, assim, uma dependência.
 
-O primeiro recurso que criado é o ***cluster***, onde temos o código abaixo:
+O primeiro recurso criado é o **cluster***, onde temos o código abaixo:
 
 ![resources cluster](images/resource-cluster.png)
   
 Podemos ver a definição de cada recurso e um comentário sobre cada linha onde fica claro a importância de cada variável para a criação desse *resource*.
 
-O segundo *resource* que será criado é o ***node poll**, que é responsável por definir quais e quantas máquinas utilizaremos na criação do _cluster_, como mostra a imagem abaixo:
+O segundo *resource* que será criado é o **node poll**, que é responsável por definir quais e quantas máquinas utilizaremos na criação do _cluster_, como mostra a imagem abaixo:
 
 
 ![resources nós](images/resource-node.png)
