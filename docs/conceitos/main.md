@@ -25,12 +25,12 @@ A arquitetura do Terraform é dividida nos seguintes componentes:
 
 As **sources** são divididas em duas fontes de entradas de informação para realização das tarefas de configuração necessárias, que são:
 
-Um **provider** nada mais é do que o provedor de serviços cloud em que você irá utilizar em suas aplicações, nesse caso, estamos utilizando o Google Cloud, mas existem outros vários providers suportados como AWS, Azure.
-
 - **TF-config** - arquivo **.tf** que define o que **criar/configurar** para que a infraestrutura atual passe para o estado desejado.
 - **State** - arquivo **.tfstate** que mantém o estado atual da configuração.
 
 Ao realizar a comparação entre **TF-config** e o **State** o Terraform define o que deve ser criado, atualizado ou destruído para que a infraestrutura passe do estado atual para o estado desejado.
+
+Um **provider** nada mais é do que o provedor de serviços *cloud* em que você irá utilizar em suas aplicações. Nesse caso, estamos utilizando o Google Cloud, mas existem outros vários providers suportados como AWS e Azure.
 
 Com um provider definido é possível acessar diferentes **resources** presentes nele. Cada provider possui seus próprios *resources* que podem ser utilizados na configuração da infraestrutura por meio do Terraform.
 
@@ -44,4 +44,4 @@ obs: Quando estiver criando a conta de serviço dê permissão de proprietário 
 - [Ter instalado o gcloud cli](https://cloud.google.com/sdk/docs/install)
 - [Ter instalado o terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
-A próxima etapa do tutorial introduz a utilização do Terraform definindo com um provider local, pode ser acessada [aqui](../parte2/main.md).
+A próxima etapa do tutorial introduz a utilização do Terraform definindo com um provider local, pode ser acessada [aqui](../parte1/main.md).
