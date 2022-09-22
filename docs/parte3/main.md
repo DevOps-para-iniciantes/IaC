@@ -1,8 +1,10 @@
-# Google Compute Engine
+# Parte 3 - Google Compute Engine
+
 Após o primeiro acesso ao **Google Cloud**, nesse tópico, iremos criar um _compute engine_ no _google cloud_. Como foi explicado no tópico 2 sobre como utilizar o _provider_ esse tópico será focado na contrução do _resource_ de _compute_ _engine_.
 A  _compute_ _engine_ do google é equivalente a uma máquina virtual. Essas máquinas virtuais são normalmente usadas como servidores de aplicações onde é possível hospedar uma aplicação e acessar através da _internet_.
 É importante dizer que cada tutorial será feito em uma pasta diferente, então crie uma pasta para a parte que será explicada nessa página.
 Caso tenha alguma dúvida pode consultar o código fonte que está nesse [link](https://github.com/DevOps-para-iniciantes/IaC/tree/master/parte3)
+
 ## Provider com Backend
 
 Para criar a _compute_ _engine_ precisaremos utilizar novamente o _provider_ ```google```, mas nesse momento iremos introduzir um conceito importante que é o de **_backend_**.
